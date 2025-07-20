@@ -188,7 +188,7 @@ def fetch_ohlcv(symbol):
     })
 
     df['Date'] = pd.to_datetime(df['Date'])
-    print(df.head)
+    # print(df.head)
     for col in ['Open', 'High', 'Low', 'Close', 'Volume']:
         df[col] = pd.to_numeric(df[col], errors='coerce')
     df['Symbol'] = symbol
