@@ -5,3 +5,4 @@ requests
 ta
 nsepython
 google-generativeai
+google-genai
