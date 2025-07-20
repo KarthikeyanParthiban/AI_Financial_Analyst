@@ -1,3 +1,5 @@
+pip install nsepython streamlit google plotly ta
+
 import streamlit as st
 import pandas as pd
 import requests
