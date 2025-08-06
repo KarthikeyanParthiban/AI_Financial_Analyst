@@ -111,7 +111,7 @@ def clean_table(table):
 # Fetch Screener tables
 @st.cache_data(ttl=3600)
 def fetch_screener_tables(ticker):
-    url = f"https://www.screener.in/company/{ticker}/consolidated/"
+    url = f"https://www.screener.in/company/{ticker}/"
     tables = pd.read_html(url)
     return [clean_table(t) for t in tables]
 
@@ -256,3 +256,4 @@ if ticker:
 
     except Exception as e:
         st.error(f"❌ Error: {e}")
+
